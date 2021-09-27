@@ -21,5 +21,6 @@ public class CarGame {
 
     private void loop() {
         cars.forEach(car -> car.move(RandomUtils.nextInt(0, 9)));
+        System.out.println(cars.toString());
     }
 }

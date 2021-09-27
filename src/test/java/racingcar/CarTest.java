@@ -23,4 +23,14 @@ class CarTest {
         car.move(9);
         Assertions.assertThat(car.getPosition()).isEqualTo(2);
     }
+
+    @Test
+    @DisplayName("실행결과 출력 테스트")
+    void resultOutputTest() {
+        String carName = "car";
+        Position position = new Position(2);
+        Car car = new Car(carName, position);
+
+        Assertions.assertThat(car.toString()).isEqualTo("car : --");
+    }
 }
