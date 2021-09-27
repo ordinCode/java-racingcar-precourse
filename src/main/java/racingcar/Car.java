@@ -11,6 +11,11 @@ public class Car {
         this.position = new Position();
     }
 
+    public Car(String name, Position position) {
+        this.name = name;
+        this.position = position;
+    }
+
     public void move(int randomNumber) {
         if (randomNumber >= MIN_NUMBER_TO_MOVE) {
             position.move();
