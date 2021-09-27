@@ -22,4 +22,5 @@ class SplitorTest {
         Assertions.assertThat(split.get(1)).isEqualTo(result2);
         Assertions.assertThat(split.get(2)).isEqualTo(result3);
     }
+
 }
